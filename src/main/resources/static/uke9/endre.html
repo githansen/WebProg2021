@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Oppgave.js"></script>
+    <script src="endre.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="col-md-6">
+<form class="form">
+    <input type="hidden" id="mnr">
+    <label for="personnr">Eiers personnummer</label><br><input class="form-control" type="text" id="personnr"/><br>
+    <label for="navn"></label>Eiers navn <br><input class="form-control" type="text" id="navn"/><br>
+    <label for="adresse">Eiers adresse </label><br><input class="form-control" type="text" id="adresse"/> <br>
+    <label for="kjennetegn">Kjennetegn</label><br><input class="form-control" type="text" id="kjennetegn"/><br>
+    <label for="merke"></label>Bilmerke<br>
+    <select class="form-control" type="text" id="merke" onchange="finntype()">
+        <option value="Volvo">Volvo</option>
+        <option value="audi"> Audi</option>
+        <option value="bmw">BMW</option>
+    </select>
+    <div id="finntype"><label for='type'> Biltype</label><br><select id='type' class='form-control'>
+        <option value='V40'>V40 </option><option value='V50'>V50 </option><option value='V70'>V70 </option>
+    </select>
+    </div>
+</form>
+    <button onclick="endre()" class="btn btn-primary">Endre</button>
+
+</div>
+</body>
+</html>

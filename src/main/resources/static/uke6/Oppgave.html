@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="Oppgave.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+<div class="container container-fluid">
+    <div class="row">
+        <div class="col-md-3"><h1 style="text-align:center;">Motorvognregister</h1></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <form class="form">
+        <label for="personnr">Eiers personnummer</label><br><input class="form-control" type="text" id="personnr"/><br>
+   <label for="navn"></label>Eiers navn <br><input class="form-control" type="text" id="navn"/><br>
+        <label for="adresse">Eiers adresse </label><br><input class="form-control" type="text" id="adresse"/> <br>
+      <label for="kjennetegn">Kjennetegn</label><br><input class="form-control" type="text" id="kjennetegn"/><br>
+        <label for="merke"></label>Bilmerke<br><input class="form-control" type="text" id="merke"/><br>
+        <label for="type">Biltype</label><br><input class="form-control" type="text" id="type"/><br> <br>
+            </form>
+            <button class="btn btn-primary" onclick="lagre()">Registrer</button>
+        </div>
+        <div class="col-sm-12 col-md-6">
+        <div id="utskrift"> gas</div>
+        </div>
+    </div>
+
+
+
+
+</div>
+</body>
+</html>
