@@ -9,6 +9,7 @@ const person2 = {
     adresse: "Osloveien 82",
     tlf: "99887766"
 }
+
 let personliste = [person1, person2]
 personliste.sort((a,b) =>{
     return b.tlf - a.tlf
