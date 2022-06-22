@@ -20,13 +20,13 @@ sjekkstatus =()=>{
             document.getElementById(id2).style.textDecoration="underline"
 
         }
-        else if(document.getElementById(id).parentElement.id=="utskrift2"){
-            if(!document.getElementById(id).checked){
+
+            else{
                 document.getElementById("utskrift").appendChild(document.getElementById(id2))
                 document.getElementById("utskrift").appendChild(document.getElementById(id))
                 document.getElementById(id2).style.textDecoration="none"
 
             }
-        }
+
     }
 }
