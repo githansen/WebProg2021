@@ -20,12 +20,10 @@ sjekkstatus =()=>{
             document.getElementById(id2).style.textDecoration="underline"
 
         }
-
             else{
                 document.getElementById("utskrift").appendChild(document.getElementById(id2))
                 document.getElementById("utskrift").appendChild(document.getElementById(id))
                 document.getElementById(id2).style.textDecoration="none"
-
             }
 
     }
